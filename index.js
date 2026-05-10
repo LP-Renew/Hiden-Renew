@@ -157,7 +157,7 @@ async function sendNotifications(summaryArr) {
     const summary = [];
 
     for (const acc of accounts) {
-        const maskedUsername = maskEmail(acc.username);
+        const maskedUsername = acc.username;
         const accKey = `ACCOUNT_${acc.id}`;
         console.log(`\n===========================================`);
         console.log(`▶ 开始处理账号: ${maskedUsername} (ID: ${acc.id})`);
